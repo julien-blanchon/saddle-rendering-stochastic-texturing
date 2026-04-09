@@ -1,0 +1,22 @@
+[workspace]
+members = [
+    "common",
+    "showcase",
+    "basic",
+    "normal_maps",
+    "height_blend",
+    "terrain_bridge",
+    "stress",
+    "lab",
+]
+resolver = "3"
+
+[workspace.dependencies]
+bevy = "0.18"
+saddle-rendering-stochastic-texturing = { path = ".." }
+stochastic_texturing = { package = "saddle-rendering-stochastic-texturing", path = ".." }
+
+[workspace.lints.clippy]
+too_many_arguments = "allow"
+type_complexity = "allow"
+nonstandard_macro_braces = "warn"

@@ -1,0 +1,14 @@
+[package]
+name = "saddle-rendering-stochastic-texturing-example-height-blend"
+version = "0.1.0"
+edition = "2024"
+publish = false
+
+[dependencies]
+bevy = { workspace = true }
+stochastic_texturing = { workspace = true }
+saddle-rendering-stochastic-texturing-example-common = { path = "../common" }
+
+[lints]
+workspace = true
+
